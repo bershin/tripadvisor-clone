@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trip Advisor Clone</title>
+    <!-- Font awesome library -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Link to external css -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div class="navbar">
+      <div class="navbar__s1">
+        <img
+          src="./images/tripadvisor-logo-circle-owl-icon-black-green-858x858.png"
+          alt="owl logo"
+        />
+        <h1>Tripadvisor</h1>
+      </div>
+      <div class="navbar__s2">
+        <div class="navbar__s2__discover">
+          <h4>Discover</h4>
+        </div>
+        <div class="navbar__s2__trips">
+          <h4>Trips</h4>
+        </div>
+        <div class="navbar__s2__review">
+          <h4>Community</h4>
+        </div>
+        <div class="navbar__s2__more">
+          <h4>More</h4>
+        </div>
+      </div>
+      <div class="navbar__s3">
+        <div class="navbar__s3__currency">
+          <i class="fa-solid fa-globe" style="color: #0f0f10"></i>
+          <!-- <img src="./images/global-communication.png" alt=""> -->
+          <p>GBP</p>
+        </div>
+        <button>Sign in</button>
+      </div>
+    </div>
+    <!-- Search -->
+    <div class="search">
+      <h1 class="search__title">Where to?</h1>
+      <div class="search__items">
+        <div class="search__items__all">
+          <i class="fa-solid fa-house" style="color: #0d0c0c"></i>
+          <p>Search All</p>
+        </div>
+        <div class="search__items__hotel">
+          <i class="fa-solid fa-bed" style="color: #0c0c0e"></i>
+          <p>Hotels</p>
+        </div>
+        <div class="search__items__todo">
+          <i class="fa-solid fa-ticket-simple" style="color: #050506"></i>
+          <p>Things to Do</p>
+        </div>
+        <div class="search__items__restaurant">
+          <i class="fa-solid fa-utensils" style="color: #070808"></i>
+          <p>Restaurents</p>
+        </div>
+        <div class="search__items__rental">
+          <i class="fa-solid fa-house-lock" style="color: #141415"></i>
+          <p>Holiday Rentals</p>
+        </div>
+      </div>
+      <div class="search__lookup">
+        <i class="fa-solid fa-magnifying-glass" style="color: #0a0a0a"></i>
+        <input
+          type="text"
+          name=""
+          id=""
+          placeholder="Place to go, things to do, hotels..."
+        />
+        <button>Search</button>
+      </div>
+    </div>
+    <!-- AI Trip -->
+    <div class="ai-trip">
+      <div class="ai-trip__desc">
+        <p>Powered by AI <span>BETA</span></p>
+        <h1>Build a trip in minutes</h1>
+        <h2>
+          Get a personalized itinerary just for you, guided by traveler tips and
+          reviews.
+        </h2>
+        <div class="ai-trip__desc__button">
+          <i class="fa-solid fa-location-dot" style="color: #0b0c0f"></i>
+          <!-- <i class="fa-regular fa-location-dot" style="color: #d2d9e4;"></i> -->
+          <p>Start a trip with AI</p>
+        </div>
+      </div>
+      <img src="./images/home-gai-entry-dv.png" alt="" />
+    </div>
+    <!-- Travel choice -->
+    <div class="travel-choice">
+      <h2>Travelers’ Choice Best of the Best Restaurants</h2>
+      <p>Winning flavors for every appetite</p>
+      <div class="traveller-container">
+        <div class="card-dine">
+          <img class="card-dine__img" src="./images/dine1.jpeg" alt="" />
+          <h2 class="card-dine__title">Fine Dining</h2>
+        </div>
+        <div class="card-dine">
+          <img class="card-dine__img" src="./images/dine2.jpeg" alt="" />
+          <h2 class="card-dine__title">Date Night</h2>
+        </div>
+        <div class="card-dine">
+          <img class="card-dine__img" src="./images/dine3.jpeg" alt="" />
+          <h2 class="card-dine__title">Hidden Gems</h2>
+        </div>
+        <div class="card-dine">
+          <img class="card-dine__img" src="./images/dine4.jpeg" alt="" />
+          <h2 class="card-dine__title">Family-Friendly</h2>
+        </div>
+      </div>
+    </div>
+      <!-- You might like these -->
+      <div class="travel-recomendation">
+        <h2>You might like these</h2>
+        <p>More things to do in London.</p>
+        <div class="traveller-container">
+          <div class="card-travel">
+            <img class="card-travel__img" src="./images/london1.jpeg" alt="" />
+            <h3 class="card-travel__title">
+              Stonehendge, Windsor Castle and Bath with Pub Lunch in Lacock
+            </h3>
+            <span class="card-travel__rating">🟢🟢🟢🟢⚪</span>
+            <p class="card-travel__comments">11,368</p>
+            <h5>from $163 per adult</h5>
+            <i class="fa-regular fa-heart"></i>
+          </div>
+          <div class="card-travel">
+            <img class="card-travel__img" src="./images/london2.jpeg" alt="" />
+            <h3 class="card-travel__title">
+              Big Bus London Hop-On Hop-Off Tour and River Cruise
+            </h3>
+            <span class="card-travel__rating">🟢🟢🟢⚪⚪</span>
+            <p class="card-travel__comments">11,368</p>
+            <h5>from $163 per adult</h5>
+            <i class="fa-regular fa-heart"></i>
+          </div>
+          <div class="card-travel">
+            <img class="card-travel__img" src="./images/london3.jpeg" alt="" />
+            <h3 class="card-travel__title">
+              Windsor Castle, Stonehendge and Bath Tour from London
+            </h3>
+            <span class="card-travel__rating">🟢🟢🟢🟢🟢</span>
+            <p class="card-travel__comments">11,368</p>
+            <h5>from $163 per adult</h5>
+            <i class="fa-regular fa-heart"></i>
+          </div>
+          <div class="card-travel">
+            <img class="card-travel__img" src="./images/london4.jpeg" alt="" />
+            <h3 class="card-travel__title">
+              Stonehendge and Bath Day trip from London
+            </h3>
+            <span class="card-travel__rating">🟢🟢⚪⚪⚪</span>
+            <p class="card-travel__comments">11,368</p>
+            <h5>from $163 per adult</h5>
+            <i class="fa-regular fa-heart"></i>
+          </div>
+        </div>
+      </div>
+    <!-- Way to london -->
+    <div class="travel-choice">
+      <h2>Ways to tour London</h2>
+      <p>Book these experiences for a close-up look at London.</p>
+      <div class="traveller-container">
+        <div class="card-travel">
+          <img class="card-travel__img" src="./images/london1.jpeg" alt="" />
+          <h3 class="card-travel__title">
+            Stonehendge, Windsor Castle and Bath with Pub Lunch in Lacock
+          </h3>
+          <span class="card-travel__rating">🟢🟢🟢🟢⚪</span>
+          <p class="card-travel__comments">11,368</p>
+          <h5>from $163 per adult</h5>
+          <i class="fa-regular fa-heart"></i>
+        </div>
+        <div class="card-travel">
+          <img class="card-travel__img" src="./images/london2.jpeg" alt="" />
+          <h3 class="card-travel__title">
+            Big Bus London Hop-On Hop-Off Tour and River Cruise
+          </h3>
+          <span class="card-travel__rating">🟢🟢🟢⚪⚪</span>
+          <p class="card-travel__comments">11,368</p>
+          <h5>from $163 per adult</h5>
+          <i class="fa-regular fa-heart"></i>
+        </div>
+        <div class="card-travel">
+          <img class="card-travel__img" src="./images/london3.jpeg" alt="" />
+          <h3 class="card-travel__title">
+            Windsor Castle, Stonehendge and Bath Tour from London
+          </h3>
+          <span class="card-travel__rating">🟢🟢🟢🟢🟢</span>
+          <p class="card-travel__comments">11,368</p>
+          <h5>from $163 per adult</h5>
+          <i class="fa-regular fa-heart"></i>
+        </div>
+        <div class="card-travel">
+          <img class="card-travel__img" src="./images/london4.jpeg" alt="" />
+          <h3 class="card-travel__title">
+            Stonehendge and Bath Day trip from London
+          </h3>
+          <span class="card-travel__rating">🟢🟢⚪⚪⚪</span>
+          <p class="card-travel__comments">11,368</p>
+          <h5>from $163 per adult</h5>
+          <i class="fa-regular fa-heart"></i>
+        </div>
+      </div>
+    </div>
+    <!-- guide tour -->
+    <div class="guide-trip">
+      <div class="guide-trip__desc">
+        <h1>Your go-to guide for fall</h1>
+        <p>How to take on the season-at home and far</p>
+        <button>Read more</button>
+      </div>
+      <img src="./images/nature.jpeg" alt="" />
+    </div>
+    <!-- More to explore -->
+    <div class="explore">
+      <h2>More to explore</h2>
+      <div class="explore-container">
+        <div class="card-explore">
+          <img class="card-explore__img" src="./images/dine1.jpeg" alt="" />
+          <h4 class="card-explore__title">
+            7 Las vegas restaurant to try when the top tables are booked
+          </h4>
+          <i class="fa-regular fa-heart"></i>
+        </div>
+        <div class="card-explore">
+          <img class="card-explore__img" src="./images/london1.jpeg" alt="" />
+          <h4 class="card-explore__title">
+            The insider's guide to fall in vermont
+          </h4>
+          <i class="fa-regular fa-heart"></i>
+        </div>
+        <div class="card-explore">
+          <img class="card-explore__img" src="./images/dine3.jpeg" alt="" />
+          <h4 class="card-explore__title">
+            Exploring Istanbul solo, one meal at a time
+          </h4>
+          <i class="fa-regular fa-heart"></i>
+        </div>
+      </div>
+    </div>
+    <!-- Dream trip -->
+    <div class="dream-trip">
+      <h1 class="dream-trip__title">Dream your Next Trip</h1>
+      <div class="travel-choice dream-choice">
+        <h2>Weekend getaways from London</h2>
+        <div class="traveller-container">
+          <div class="card-dine">
+            <img class="card-dine__img" src="./images/dine1.jpeg" alt="" />
+            <h2 class="card-dine__title">Fine Dining</h2>
+          </div>
+          <div class="card-dine">
+            <img class="card-dine__img" src="./images/dine2.jpeg" alt="" />
+            <h2 class="card-dine__title">Date Night</h2>
+          </div>
+          <div class="card-dine">
+            <img class="card-dine__img" src="./images/dine3.jpeg" alt="" />
+            <h2 class="card-dine__title">Hidden Gems</h2>
+          </div>
+          <div class="card-dine">
+            <img class="card-dine__img" src="./images/dine4.jpeg" alt="" />
+            <h2 class="card-dine__title">Family-Friendly</h2>
+          </div>
+        </div>
+      </div>
+      <div class="travel-choice">
+        <h2>Top destinations for your next vacation</h2>
+        <div class="traveller-container">
+          <div class="card-dine">
+            <img class="card-dine__img" src="./images/dine1.jpeg" alt="" />
+            <h2 class="card-dine__title">Fine Dining</h2>
+          </div>
+          <div class="card-dine">
+            <img class="card-dine__img" src="./images/dine2.jpeg" alt="" />
+            <h2 class="card-dine__title">Date Night</h2>
+          </div>
+          <div class="card-dine">
+            <img class="card-dine__img" src="./images/dine3.jpeg" alt="" />
+            <h2 class="card-dine__title">Hidden Gems</h2>
+          </div>
+          <div class="card-dine">
+            <img class="card-dine__img" src="./images/dine4.jpeg" alt="" />
+            <h2 class="card-dine__title">Family-Friendly</h2>
+          </div>
+        </div>
+      </div>
+      <div class="travel-choice">
+        <h1 class="travel-choice__title">Home Rentals Near You</h1>
+        <div class="traveller-container">
+          <div class="card-travel">
+            <h3 class="card-travel__title">
+              We think you'd enjoy these homes for a quick trip out of town.
+            </h3>
+          </div>
+          <div class="card-travel">
+            <img class="card-travel__img" src="./images/london2.jpeg" alt="" />
+            <h4>Rental in Llandysul</h4>
+            <h5>48 rentals</h5>
+          </div>
+          <div class="card-travel">
+            <img class="card-travel__img" src="./images/london3.jpeg" alt="" />
+            <h4>Rental in Penvensey bay</h4>
+            <h5>69 rentals</h5>
+          </div>
+          <div class="card-travel">
+            <img class="card-travel__img" src="./images/london4.jpeg" alt="" />
+            <h4>Rental in Bourton-on-the-Water</h4>
+            <h5>144 rentals</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Travel Choice -->
+    <div class="travel-best">
+      <div class="travel-best__container">
+        <img src="./images/TC_badge_yellow.svg" alt="">
+        <h2>Travelers' Choice Best of the Best</h2>
+        <h3>Our top 1% of places, stays, eats, and experiences—decided by you.</h3>
+        <button>See the winners</button>
+      </div>
+      <img class="travel-best__image" src="./images/motor-ride.jpeg" alt="">
+    </div>
+    <!-- Trending in travel -->
+    <div class="trending">
+      <h1>Trending in Travel</h1>
+      <div class="trending__s1">
+        <h3 class="trending__s1__fall">Fall Destinations</h3>
+        <h3 class="trending__s1__place">Places to Visit by Month</h3>
+        <h3 class="trending__s1__travel">Travelers' Choice Experiences</h3>
+      </div>
+      <div class="trending__container">
+        <div>
+          <p>Salem</p>
+          <p>New Orleans</p>
+          <p>Vermont</p>
+          <p>Savannah</p>
+          <p>Ashville</p>
+        </div>
+        <div>
+          <p>Gatlinburg</p>
+          <p>Leavenworth</p>
+          <p>Byce Canyon</p>
+          <p>Great Smoky Mountain</p>
+          <p>Shenandoah National park</p>
+        </div>
+        <div>
+          <p>Florence</p>
+          <p>Rome</p>
+          <p>Munich</p>
+          <p>Prague</p>
+          <p>Venice</p>
+        </div>
+        <div>
+          <p>Tokyo</p>
+          <p>Porto</p>
+          <p>Athens</p>
+          <p>Madrid</p>
+          <p>Buenos Aires</p>
+        </div>
+      </div>
+    </div>
+<!-- Footer -->
+    <div class="footer">
+      <table>
+        <tr>
+          <td>
+            <h6>About Tripadvisor</h6>
+            <p>About Us</p>
+            <p>Press</p>
+            <p>Resources and Policies</p>
+            <p>Careers</p>
+            <p>Investor Relations</p>
+            <p>Trust & Safety</p>
+            <p>Contact us</p>
+            <p>Accessibility Statement</p>
+          </td>
+          <td>
+            <h6>Explore</h6>
+            <p>Write a review</p>
+            <p>Add a Place</p>
+            <p>Join </p>
+            <p>Travelers' Choice</p>
+            <p>GreenLeaders</p>
+            <p>Blog</p>
+            <p>Help Center</p>
+            <p>Tripadvisor Plus</p>
+            <p>Travel Articles</p>
+          </td>
+          <td>
+            <h6>Do Business With Us</h6>
+            <p>Owners</p>
+            <p>Business Advantage</p>
+            <p>Sponsored Placements</p>
+            <p>Advertise with Us</p>
+            <p>Access our Content API</p>
+            <p>Become an Affiliate</p>
+            <p>Get The App</p>
+            <p>iPhone App</p>
+            <p>Android App</p>
+          </td>
+          <td></td>
+          <td colspan="2">       
+            <h6>Tripadvisor Sites</h6>
+            <p>Discover your dream destination with Jetsetter</p>
+            <p>Book the best restaurants with TheFork</p>
+            <p>Book tours and attraction tickets on Viator</p>
+            <p>Read cruise reviews on Cruise Critic</p>
+            <p>Get airline seating charts on Seat Guru</p>
+            <p>Find vacation rentals on FlipKey</p>
+            <p>Search for holiday rentals on Holiday Lettings</p>
+            <p>Plan and book your next trip with Reco Trip Designers</p>
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <td colspan="4">
+            <div class="footer__container">
+              <img src="./images/tripadvisor-logo-circle-owl-icon-black-green-858x858.png" alt="">
+              <div>
+                <p>© 2023 Tripadvisor LLC All rights reserved.</p>
+                <div class="footer__content">
+                  <h4>Terms of Use</h4>
+                  <h4>Privacy and Cookies Statement</h4>
+                  <h4>Cookie consent</h4>
+                  <h4>Site Map</h4>
+                  <h4>How the site works</h4>
+                  <h4>Contact us</h4>
+                </div>
+              </div>
+            </div>
+
+          </td>
+          <td>
+            <div class="footer__content__currency">
+              <select name="" id="">
+                <option value="">$ USD</option>
+                <option value="">$ INR</option>
+              </select>
+            </div>
+          </td>
+          <td>
+            <div class="footer__content__country">
+              <select name="" id="">
+                <option value="">United States</option>
+                <option value="">United Kingdom</option>
+              </select>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="4">
+            <p class="footer__content__info">This is the version of our website addressed to speakers of English in the United States. If you are a resident of another country or region, please select the appropriate version of Tripadvisor for your country or region in the drop-down menu. more</p>
+          </td>
+          <td></td>
+          <td>
+            <a href="#"><i class="fa-brands fa-facebook" style="color: #050505;"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter" style="color: #0a0a0b;"></i></a>
+            <a href="#"><i class="fa-brands fa-pinterest" style="color: #0d0d0d;"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram" style="color: #0c0c0e;"></i></a>
+            
+          </td>
+        </tr>
+
+      </table>
+    </div>
+  </body>
+</html>
